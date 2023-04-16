@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@meet/frontend/landing/home/feature": [
+        "libs/frontend/landing/home/feature/src/index.ts"
+      ],
+      "@meet/frontend/landing/shell/feature": [
+        "libs/frontend/landing/shell/feature/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

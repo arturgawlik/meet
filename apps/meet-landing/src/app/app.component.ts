@@ -1,14 +1,15 @@
-import { Component } from "@angular/core";
-import { RouterModule } from "@angular/router";
-import { NxWelcomeComponent } from "./nx-welcome.component";
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { FrontendLandingShellFeatureComponent } from '@meet/frontend/landing/shell/feature';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
-  selector: "meet-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"],
+  imports: [RouterModule, FrontendLandingShellFeatureComponent],
+  selector: 'meet-root',
+  template: `
+    <meet-frontend-landing-shell-feature>
+      <router-outlet />
+    </meet-frontend-landing-shell-feature>
+  `,
 })
-export class AppComponent {
-  title = "meet-landing";
-}
+export class AppComponent {}
